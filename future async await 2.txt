@@ -1,0 +1,22 @@
+void main()async{
+  
+  // uso o await para esperar as informações chegarem da função Future buscarDados
+  await buscarDados();
+  
+  print('carregar tela');
+  print('botões');
+  print('campos');
+  print('imagens');
+  
+  
+  
+}
+
+Future buscarDados(){
+  
+  // delayed para dizer uma duração de 05 segundos 
+  // () indica uma função anônima
+  return Future.delayed(Duration(seconds: 5), ()=> print('carregou os dados'));
+  
+  
+}
